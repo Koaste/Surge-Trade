@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import React, { useState } from 'react'
 
-const Modals = ({ isVisible, onClose }) => {
+const Modals = ({ isVisible, onClose }: any) => {
     if ( !isVisible ) return null;
 
     const handleClose = (e) => {
