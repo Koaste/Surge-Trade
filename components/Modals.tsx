@@ -4,7 +4,7 @@ import React, { useState } from 'react'
 const Modals = ({ isVisible, onClose }: any) => {
     if ( !isVisible ) return null;
 
-    const handleClose = (e) => {
+    const handleClose = (e: any) => {
         if (e.target.id === 'wrapper') onClose();
     }
   
