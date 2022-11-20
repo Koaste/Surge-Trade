@@ -2,25 +2,22 @@ import Head from 'next/head'
 import Nav from '../components/nav'
 import Image from 'next/image'
 import Banner from '../components/Banner'
-import { useState } from "react"
+import Dashboard from '../components/Dashboard'
 
 type Props = {
 }
 
-const Home = (props: Props) => {
-  const [stockSymbol, setStockSymbol] = useState("FB");
 
+const Home = (props: Props) => {
   return (
     <div className='text-[white] min-h-screen overflow-y-hidden overflow-x-hidden z-0 bg-slate-800'>
       <Head>
         <title>Surge Trade</title>
       </Head>
       <div>
-        <Nav/>
+        <Nav />
       </div>
-      <div className='flex relative col-span-2'>
-        <Banner />
-      </div>
+      <Dashboard />
     </div>
   )
 }
