@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import Nav from '../components/nav'
+import Nav from '../components/Nav'
 import Image from 'next/image'
 import Banner from '../components/Banner'
 import { useState } from "react"
